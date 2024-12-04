@@ -36,3 +36,155 @@
     transform: rotate(360deg);
   }
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+.searchbar {
+  padding: 20px;
+}
+
+.searchbar input {
+  width: 100%;
+}
+
+.flight-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.flight-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.flight-item:hover {
+  transform: translateY(-5px);
+}
+
+.mission-info {
+  justify-items: baseline;
+}
+
+.mission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mission-header h1 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.toggle-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 8px;
+}
+
+.toggle-button:hover {
+  background-color: #155bb5;
+}
+
+.details-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.details-content {
+  align-items: baseline;
+}
+
+.flight-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.text {
+  text-align: left;
+}
+
+.text h2 {
+  font-size: 1.3em;
+  color: #444;
+}
+
+.details-container p {
+  color: #555;
+  margin: 5px 0;
+}
+
+.links a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.flight-status {
+  font-size: 0.8rem;
+  margin-left: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.flight-status.success {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.flight-status.failure {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.badge.upcoming {
+  background-color: #00e5ff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-left: 8px;
+}
+
+.no-image {
+  font-style: italic;
+  color: #555;
+  font-size: 0.9em;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+}
